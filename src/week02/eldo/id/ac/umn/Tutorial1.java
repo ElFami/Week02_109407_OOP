@@ -8,6 +8,7 @@ class Tutor {
         String[] matkulCE = {"Riset Operasi", "Jaringan Komputer", "Aljabar Linear"};
         String[] matkulIS = {"Sistem Database", "Administrasi Database"};
         System.out.println("Pilih kategori mata kuliah: ");
+        
         System.out.println("1. Informatika");
         System.out.println("2. Computer Engineering");
         System.out.println("3. Informative System");
