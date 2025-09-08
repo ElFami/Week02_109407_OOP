@@ -1,9 +1,8 @@
 package week02.eldo.id.ac.umn;
-import java.util.Scanner;
 
 class Tutor {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
 
         String[] matkulIF = {"Matematika Diskrit", "Dasar-dasar pemrograman", "Pemrograman berorientasi objek"};
         String[] matkulCE = {"Riset Operasi", "Jaringan Komputer", "Aljabar Linear"};
@@ -32,6 +31,8 @@ class Tutor {
             default:
                 System.out.println("Pilihan tidak valid");
         }
+
+        scanner.close(); // ✅ Tutup scanner
     }
 
     public static void show(String[] matkul) {
@@ -43,51 +44,28 @@ class Tutor {
 
 class HitungHari {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
 
         System.out.print("Masukkan bulan (1-12): ");
         int bulan = scanner.nextInt();
 
         switch (bulan) {
-            case 1:
-                System.out.println("Bulan Januari memiliki 31 hari");
-                break;
-            case 2:
-                System.out.println("Bulan Februari memiliki 28 atau 29 hari (kabisat)");
-                break;
-            case 3:
-                System.out.println("Bulan Maret memiliki 31 hari");
-                break;
-            case 4:
-                System.out.println("Bulan April memiliki 30 hari");
-                break;
-            case 5:
-                System.out.println("Bulan Mei memiliki 31 hari");
-                break;
-            case 6:
-                System.out.println("Bulan Juni memiliki 30 hari");
-                break;
-            case 7:
-                System.out.println("Bulan Juli memiliki 31 hari");
-                break;
-            case 8:
-                System.out.println("Bulan Agustus memiliki 31 hari");
-                break;
-            case 9:
-                System.out.println("Bulan September memiliki 30 hari");
-                break;
-            case 10:
-                System.out.println("Bulan Oktober memiliki 31 hari");
-                break;
-            case 11:
-                System.out.println("Bulan November memiliki 30 hari");
-                break;
-            case 12:
-                System.out.println("Bulan Desember memiliki 31 hari");
-                break;
-            default:
-                System.out.println("Input tidak valid! Harus antara 1 sampai 12.");
+            case 1:  System.out.println("Bulan Januari memiliki 31 hari"); break;
+            case 2:  System.out.println("Bulan Februari memiliki 28 atau 29 hari (kabisat)"); break;
+            case 3:  System.out.println("Bulan Maret memiliki 31 hari"); break;
+            case 4:  System.out.println("Bulan April memiliki 30 hari"); break;
+            case 5:  System.out.println("Bulan Mei memiliki 31 hari"); break;
+            case 6:  System.out.println("Bulan Juni memiliki 30 hari"); break;
+            case 7:  System.out.println("Bulan Juli memiliki 31 hari"); break;
+            case 8:  System.out.println("Bulan Agustus memiliki 31 hari"); break;
+            case 9:  System.out.println("Bulan September memiliki 30 hari"); break;
+            case 10: System.out.println("Bulan Oktober memiliki 31 hari"); break;
+            case 11: System.out.println("Bulan November memiliki 30 hari"); break;
+            case 12: System.out.println("Bulan Desember memiliki 31 hari"); break;
+            default: System.out.println("Input tidak valid! Harus antara 1 sampai 12.");
         }
+
+        scanner.close(); // ✅ Tutup scanner
     }
 }
 
@@ -115,5 +93,7 @@ class CekPrima {
                 System.out.println(angka + " bukan bilangan prima");
             }
         }
+
+        scanner.close(); // ✅ Tutup scanner
     }
 }
